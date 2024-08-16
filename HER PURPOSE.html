@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HER PURPOSE</title>
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            background-color: #123;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilos para el texto flameante */
+        .flame-text {
+            font-size: 35px;
+            color: #ff4b1f;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            position: relative;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        /* Efecto de parpadeo (flicker) */
+        @keyframes flicker {
+            0% {
+                text-shadow: 0 0 10px #ff4b1f, 0 0 20px #ff4b1f, 0 0 30px #ff4b1f, 0 0 40px #f3d94c, 0 0 70px #f3d94c, 0 0 80px #f3d94c, 0 0 100px #f3d94c;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff4b1f, 0 0 10px #ff4b1f, 0 0 15px #ff4b1f, 0 0 20px #f3d94c, 0 0 35px #f3d94c, 0 0 40px #f3d94c, 0 0 50px #f3d94c;
+            }
+        }
+
+        /* Efecto de animación de llamas */
+        @keyframes flames {
+            0% { transform: rotate(4deg) translateY(-5px); }
+            25% { transform: rotate(-2deg) translateY(2px); }
+            50% { transform: rotate(1deg) translateY(-1px); }
+            75% { transform: rotate(-1deg) translateY(1px); }
+            100% { transform: rotate(3deg) translateY(0); }
+        }
+
+        /* Aplicar el efecto de llamas */
+        .flame-text::before, .flame-text::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-shadow: inherit;
+            z-index: -1;
+        }
+
+        .flame-text::before {
+            top: -0.05em;
+            filter: blur(6px);
+            opacity: 0.75;
+            animation: flames 3s infinite;
+        }
+
+        .flame-text::after {
+            top: -0.15em;
+            filter: blur(6px);
+            opacity: 0.5;
+            animation: flames 2s infinite reverse;
+        }
+    </style>
+      <style>
+        /* Estilos básicos para la página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #282c34;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        /* Estilos para el texto */
+        .moving-text {
+            font-size: 50px;
+            animation: moveUp 3s infinite;
+            opacity: 0;
+        }
+
+        /* Definición de la animación */
+        @keyframes moveUp {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="green">
+<center><font color="gray"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="moving-text"><I><U><h1>HER PURPOSE</h1></U></I></div></font>
+
+
+<div class="flame-text">
+
+<p><br><br><br><br><br> ¡¡¡Hola!!!
+<br><br><br><br>Aquí puedes ver lo que es mi esposa
+<br>Su propósito es uno tan hermoso, tiene que ver
+<br>con lo que hace, con lo que sabe, con lo que dice
+<br>y con lo que es.
+<br><br><br>Ella es llamada por el Señor,
+<br>es una guerrera única, es llamada para la Gloria
+<br>de Dios, llamada por Papito Jehová, a través
+<br>de Cristo
+
+<br><br><br><br>(Isaías 43:7)
+<br><br> Todos los llamados de mi nombre; 
+<br>para gloria mía los he creado, 
+<br>los formé y los hice.
+<br><br>Tu propósito ahora, es amar a Dios
+<br>con todo de ti, pues cuando sepas tu propósito
+<br>de ser, harás conforme a eso.
+<br><br>Mientras tanto, prepárate más para con ello
+<br>Siempre, mi amorchote.
+</p>
+</div>
+</center>
+</body>
+</html>
