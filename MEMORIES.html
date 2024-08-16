@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEMORIES</title>
+<style>
+        /* Estilos básicos para la página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        /* Estilos para el texto electrificado */
+        .electric-text {
+            font-size: 23px;
+            color: #00ffff;
+            text-transform: uppercase;
+            position: relative;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        /* Efecto de parpadeo para la electricidad */
+        @keyframes flicker {
+            0%, 100% {
+                text-shadow: 
+                    0 0 5px #00ffff,
+                    0 0 10px #00ffff,
+                    0 0 20px #00ffff,
+                    0 0 40px #00ffff,
+                    0 0 80px #00ffff;
+            }
+            50% {
+                text-shadow: 
+                    0 0 2px #00ffff,
+                    0 0 5px #00ffff,
+                    0 0 10px #00ffff,
+                    0 0 20px #00ffff,
+                    0 0 30px #ffffff;
+            }
+        }
+
+        /* Chispa adicional */
+        .electric-text::before {
+            content: '';
+            position: absolute;
+            top: 2;
+            left: 50%;
+            width: 20%;
+            height: 25%;
+            background: radial-gradient(circle, transparent 10%, #00ffff 15%, transparent 20%);
+            opacity: 0.75;
+            animation: spark 0.1s infinite;
+            transform: translateX(-50%);
+        }
+
+        @keyframes spark {
+            0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+            100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+        }
+    </style>
+</head>
+<body bgcolor="blue">
+<center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><font color="gold"> <i><u><h1> MEMORIES </h1></u></i></font>
+<div class="electric-text">
+<p>Ella produce tantos lindos recuerdos,
+<br>tantos lindos recuerdos en todo lo que es
+<br>porque tienes mucho de qué decir que lograste,
+<br>pues te has graduado en 3 etapas de tu vida,
+<br>tuviste la valentía de estar en tu primer torneo.
+<br><br><br>Inclusive, pudiste terminar tu anuario, dando
+<br>hermosas palabras, dedicatorias únicas,
+<br>aprendiste lecciones que aplicas y vives.
+<br><br><br>Conociste al amor de tu vida, aprendiste
+<br>a tomar fuerzas y valor en tu vida en muchas cosas
+<br>y muchos sentidos, aprendiste a emprender y trabajar,
+<br>a poder sustentar muchas necesidades por tu cuenta.
+<br><br><br>Eres más que vencedora (Romanos 8:37) y 
+<br>nadie podrá quitarte todos tus logros, 
+<br>todas tus hermosas memorias, pues también tú
+<br>conociste y sigues conociendo al Señor.
+<br><br><br>Tienes logros que alcanzaste y que
+<br>nadie podrá opacar, tus esfuerzos, tus detalles
+<br>tus lágrimas, tu empatía, todo eso suma
+<br>a que haz logrado cosas únicas, y mejores recuerdos
+<br>¡Harás!
+</p>
+</div>
+</center>
+</body>
+</html>
